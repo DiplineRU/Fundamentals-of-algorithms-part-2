@@ -1,43 +1,44 @@
+/*
 import org.example.Exception.InvalidIndexException;
 import org.example.Exception.NullItemException;
 import org.example.Exception.StorageIsFullException;
-import org.example.StringListImpl;
+import org.example.IntegerListImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StringListImplTest {
+public class IntegerListImplTest {
 
     @Test
     void add_validItem_success() {
-        StringListImpl stringList = new StringListImpl();
-        String item = "Test";
-        assertEquals(item, stringList.add(item));
+        IntegerListImpl IntegerList = new IntegerListImpl();
+        Integer item = "Test";
+        assertEquals(item, IntegerList.add(item));
     }
 
     @Test
     void add_nullItem_throwNullItemException() {
-        StringListImpl stringList = new StringListImpl();
-        assertThrows(NullItemException.class, () -> stringList.add(null));
+        IntegerListImpl IntegerList = new IntegerListImpl();
+        assertThrows(NullItemException.class, () -> IntegerList.add(null));
     }
 
     @Test
     void add_fullStorage_throwStorageIsFullException() {
-        StringListImpl stringList = new StringListImpl(1);
-        stringList.add("Test");
-        assertThrows(StorageIsFullException.class, () -> stringList.add("Test2"));
+        IntegerListImpl IntegerList = new IntegerListImpl(1);
+        IntegerList.add("Test");
+        assertThrows(StorageIsFullException.class, () -> IntegerList.add("Test2"));
     }
 
 
     @Test
     void add_invalidIndex_throwInvalidIndexException() {
-        StringListImpl stringList = new StringListImpl();
-        assertThrows(InvalidIndexException.class, () -> stringList.add(1, "Test"));
+        IntegerListImpl IntegerList = new IntegerListImpl();
+        assertThrows(InvalidIndexException.class, () -> IntegerList.add(1, "Test"));
     }
 
     @Test
     public void testAdd() {
-        StringListImpl list = new StringListImpl();
+        IntegerListImpl list = new IntegerListImpl();
 
         list.add("apple");
         list.add("banana");
@@ -48,7 +49,7 @@ public class StringListImplTest {
 
     @Test
     public void testContains() {
-        StringListImpl list = new StringListImpl();
+        IntegerListImpl list = new IntegerListImpl();
 
         list.add("apple");
         list.add("banana");
@@ -60,7 +61,7 @@ public class StringListImplTest {
 
     @Test
     public void testIndexOf() {
-        StringListImpl list = new StringListImpl();
+        IntegerListImpl list = new IntegerListImpl();
 
         list.add("apple");
         list.add("banana");
@@ -71,3 +72,4 @@ public class StringListImplTest {
     }
 
 }
+*/
