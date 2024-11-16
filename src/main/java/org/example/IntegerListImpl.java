@@ -77,8 +77,8 @@ public class IntegerListImpl implements IntegerList {
     @Override
     public int contains(Integer item) {
         Integer[] storageCopy = toArray();
-        sort(storageCopy);
-        return binarySearch(storageCopy, item);
+        Arrays.sort(storageCopy);
+        return Arrays.binarySearch(storageCopy, item);
     }
 
     @Override
